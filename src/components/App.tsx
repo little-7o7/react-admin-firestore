@@ -12,13 +12,13 @@ import ArticleCreate from './ArticleCreate';
 import ArticleList from './ArticleList';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAQPKZrD6Pl-KlNZMM1_3HtMWdjVJXoqgw",
-    authDomain: "react-admin-with-firebase.firebaseapp.com",
-    databaseURL: "https://react-admin-with-firebase-default-rtdb.firebaseio.com",
-    projectId: "react-admin-with-firebase",
-    storageBucket: "react-admin-with-firebase.appspot.com",
-    messagingSenderId: "874109331939",
-    appId: "1:874109331939:web:dd1d57350ff704e2a618d6"
+    apiKey: "AIzaSyD6RVbA7AoJK-nfggRm2Nsp4Joi7MO2vaM",
+    authDomain: "articles-9f370.firebaseapp.com",
+    databaseURL: "https://articles-9f370-default-rtdb.firebaseio.com",
+    projectId: "articles-9f370",
+    storageBucket: "articles-9f370.appspot.com",
+    messagingSenderId: "659020904039",
+    appId: "1:659020904039:web:75ad243d9b221a0cfa86c2"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
@@ -49,7 +49,7 @@ const App = () => {
     return (
         <Admin dataProvider={dataProvider} authProvider={authProvider}>
             <Resource
-                name="shops"
+                name="articles"
                 list={ArticleList}
                 create={ArticleCreate}
             />
